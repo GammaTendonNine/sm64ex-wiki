@@ -24,7 +24,7 @@ sudo apt install build-essential git python3 libaudiofile-dev libglew-dev libsdl
 ### Arch Linux
 There is an AUR package (courtesy of @narukeh) avaliable under the name [sm64pc-git](https://aur.archlinux.org/packages/sm64pc-git/). Install it using your AUR helper of choice.
 
-But if you want to do it manually:
+If you want to build it yourself:
 ```
 sudo pacman -S base-devel python audiofile sdl2 glew
 ```
