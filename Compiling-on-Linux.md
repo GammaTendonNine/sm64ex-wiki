@@ -1,5 +1,5 @@
 ## Note to Windows users
-Do not attempt to use this guide to compile Windows binaries under WSL. Use the "Compiling on Windows" guide.
+Do not attempt to use this guide to compile Windows binaries under WSL. It will not work. Use the "Compiling on Windows" guide.
 
 ## Copy baserom(s) for asset extraction
 
