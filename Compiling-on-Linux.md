@@ -1,9 +1,9 @@
-# 1. Copy baserom(s) for asset extraction
+## Copy baserom(s) for asset extraction
 
 For each version (jp/us/eu) that you want to build an executable for, put an existing ROM at
 `./baserom.<version>.z64` for asset extraction.
 
-# 2. Install build dependencies
+## Install build dependencies
 
 The build system has the following package requirements:
   * python3 >= 3.6
@@ -39,7 +39,7 @@ sudo xbps-install -S base-devel python3 audiofile-devel SDL2-devel glew-devel
 sudo xbps-install -S base-devel python3 audiofile-devel-32bit SDL2-devel-32bit glew-devel-32bit
 ```
 
-# 3. Build the executable.
+## Build the executable.
 
 Run `make` to build (defaults to `VERSION=us`)
 
