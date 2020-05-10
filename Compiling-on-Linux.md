@@ -34,7 +34,7 @@ sudo pacman -S base-devel python audiofile sdl2 glew
 sudo xbps-install -S base-devel python3 audiofile-devel SDL2-devel glew-devel
 ```
 
-## Void Linux - targeting 32 bits
+### Void Linux - targeting 32 bits
 ```
 sudo xbps-install -S base-devel python3 audiofile-devel-32bit SDL2-devel-32bit glew-devel-32bit
 ```
