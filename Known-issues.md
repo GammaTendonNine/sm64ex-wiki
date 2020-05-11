@@ -1,5 +1,11 @@
 ### Here are the currently acknowledged issues:
-* Support for the EU version is still experimental.
-* There seems to be savedata-related problems on some 64-bits builds.
-* Camera controls are also bugged for some.
-* The cursor on the bootup screen is offset by the aspect ratio.
+  * EU version has buggy texts and currently no audio. 
+  * Hazy Maze Cave crashes on fullscreen (#57)
+  * Horizontal analog camera control reverts to C-button style in BDW (#72)
+  * Mouse look fails when shooting Mario onto a tree or pole. (#71)
+  * "make: Nothing to be done for 'default'" for Web builds (#67)
+  * Title Screen has no Mario Cursor in fullscreen (#28)
+
+### These are currently marked as solved. Please relate if you're having the issues below.
+  * Support for the EU version is still experimental.
+  * Camera controls are also bugged for some.
