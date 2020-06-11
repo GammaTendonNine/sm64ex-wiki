@@ -15,6 +15,20 @@ The build system has the following package requirements:
   * libglew-dev
   * git
 
+### Possible build flags
+
+##### BETTERCAMERA=1
+Enables better camera controls.
+##### NODRAWINGDISTANCE=1
+Reduces the drawing distance limitations.
+#####  TEXTURE_FIX=1
+Fixes some texture problems that happened in the original game and uses a few unused textures.
+##### LEGACY_GL=1
+Targets support for older OpenGL. Use this is you intend to run this game on old hardware.
+##### TARGET_ARCH, TARGET_BITS
+Explicitly define which architecture to build for, such as in
+``` TARGET_ARCH=i686 TARGET_BITS=32``` or ``` TARGET_ARCH=aarch64 TARGET_BITS=64 ```
+If you're in doubt as to what this means, don't use these flags.
 
 ### Debian / Ubuntu - targeting 32 bits
 ```
@@ -23,6 +37,14 @@ sudo apt install build-essential git python3 libaudiofile-dev libglew-dev:i386 l
 ### Debian / Ubuntu - targeting 64 bits
 ```
 sudo apt install build-essential git python3 libaudiofile-dev libglew-dev libsdl2-dev
+```
+### Fedora - targeting 64 bits
+```
+sudo dnf install make gcc python3 audiofile-devel glew-devel SDL2-devel
+```
+### Fedora - targeting 32 bits
+```
+sudo dnf install python3.i686 audiofile-devel.i686 glew-devel.i686 SDL2-devel.i686
 ```
 ### Arch Linux
 There is an AUR package (courtesy of @narukeh) avaliable under the name [sm64pc-git](https://aur.archlinux.org/packages/sm64pc-git/). Install it using your AUR helper of choice.
