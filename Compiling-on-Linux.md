@@ -50,7 +50,7 @@ sudo xbps-install -S base-devel python3 SDL2-devel-32bit glew-devel-32bit
 
 ## Build the executable.
 
-Run `make` to build. To turn certain features on and off, append any needed build flags to your `make` invocation like so:
+Run `make` to build. To turn certain features on and off, append any needed [build flags](https://github.com/sm64pc/sm64pc/wiki/Build-options) to your `make` invocation like so:
 ```
 make BETTERCAMERA=1 EXTERNAL_DATA=1 -j4
 ```
