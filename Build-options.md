@@ -1,4 +1,5 @@
 Here's a list of currently available build options that turn certain features on or off. Append them to your `make` invocation when building, like so: `make FEATURE=1 OTHER_FEATURE=0`.
+This list applies to the `nightly` branch. `master` lacks `*_API`, `EXTERNAL_DATA` and `DISCORDRPC`.
 
 | Build option        | Default | Possible values                     | Description                                                                                                                                                                                                                          |
 |---------------------|---------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
