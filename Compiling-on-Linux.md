@@ -14,6 +14,8 @@ The build system has the following package requirements:
   * libglew-dev
   * git
 
+Additionally, building the `master` branch requires libaudiofile.
+
 ### Debian / Ubuntu - targeting 32 bits
 ```
 sudo apt install build-essential git python3 libglew-dev:i386 libsdl2-dev:i386
@@ -35,7 +37,7 @@ There is an AUR package (courtesy of @narukeh) avaliable under the name [sm64pc-
 
 If you want to build it yourself:
 ```
-sudo pacman -S base-devel python sdl2 glew
+sudo pacman -S base-devel python sdl2 glew audiofile
 ```
 
 ### Void Linux - targeting 64 bits
@@ -46,6 +48,17 @@ sudo xbps-install -S base-devel python3 SDL2-devel glew-devel
 ### Void Linux - targeting 32 bits
 ```
 sudo xbps-install -S base-devel python3 SDL2-devel-32bit glew-devel-32bit
+```
+
+### Building libaudiofile for the `master` branch
+
+If your package repositories don't already include a libaudiofile (or libaudiofile-dev) package, you can build the audiofile source included in the `master` branch:
+```
+cd tools/audiofile-0.3.6
+autoreconf -i
+./configure
+make
+make install
 ```
 
 ## Build the executable.
