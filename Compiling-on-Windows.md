@@ -16,7 +16,8 @@ pacman -S automake autoconf asciidoc
 cd tools/audiofile-0.3.6
 autoreconf -i
 ./configure
-make && make install
+make
+make install
 ```
 
 ### Copy baserom(s) for asset extraction
