@@ -37,7 +37,7 @@ There is an AUR package (courtesy of @narukeh) avaliable under the name [sm64pc-
 
 If you want to build it yourself:
 ```
-sudo pacman -S base-devel python sdl2 glew audiofile
+sudo pacman -S base-devel python sdl2 glew
 ```
 
 ### Void Linux - targeting 64 bits
