@@ -14,8 +14,6 @@ The build system has the following package requirements:
   * libglew-dev
   * git
 
-Additionally, building the `master` branch requires libaudiofile.
-
 ### Debian / Ubuntu - targeting 32 bits
 ```
 sudo apt install build-essential git python3 libglew-dev:i386 libsdl2-dev:i386
