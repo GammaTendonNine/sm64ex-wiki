@@ -48,17 +48,6 @@ sudo xbps-install -S base-devel python3 SDL2-devel glew-devel
 sudo xbps-install -S base-devel python3 SDL2-devel-32bit glew-devel-32bit
 ```
 
-### Building libaudiofile for the `master` branch
-
-If your package repositories don't already include a libaudiofile (or libaudiofile-dev) package, you can build the audiofile source included in the `master` branch:
-```
-cd tools/audiofile-0.3.6
-autoreconf -i
-./configure
-make
-make install
-```
-
 ## Build the executable.
 
 Run `make` to build. To turn certain features on and off, append any needed [build flags](https://github.com/sm64pc/sm64pc/wiki/Build-options) to your `make` invocation like so:
