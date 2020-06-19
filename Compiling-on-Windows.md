@@ -10,16 +10,6 @@ Run the `MINGW64` prompt if you wish to build a 64-bit version of the executable
 pacman -S mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w64-x86_64-SDL2 python3
 ```
 
-**If you are building the `master` branch**, you will also need libaudiofile. The source for it is provided in the repository (`tools/audiofile-0.3.6`) and can be built and installed like so:
-```
-pacman -S automake autoconf asciidoc
-cd tools/audiofile-0.3.6
-autoreconf -i
-./configure
-make
-make install
-```
-
 ### Copy baserom(s) for asset extraction
 
 For each version (jp/us/eu) that you want to build an executable for, put an existing ROM at
