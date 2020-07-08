@@ -15,7 +15,7 @@ pacman -S mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w6
 For each version (jp/us/eu) that you want to build an executable for, put an existing ROM at
 `./baserom.<version>.z64` for asset extraction.
 
-### Navigate to the sm64pc root directory.
+### Navigate to the sm64ex root directory.
 
 ### Run `make`. To turn certain features on and off, append any needed [build flags](https://github.com/sm64pc/sm64pc/wiki/Build-options) to your `make` invocation like so:
 
