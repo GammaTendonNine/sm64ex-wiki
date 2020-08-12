@@ -19,6 +19,10 @@ pacman -S unzip make git mingw-w64-i686-gcc mingw-w64-x86_64-gcc mingw-w64-i686-
 For each version (jp/us/eu) that you want to build an executable for, put an existing ROM at
 `./baserom.<version>.z64` for asset extraction.
 
+For example, if you want to build the US version, there should be a ROM file called `baserom.us.z64` in the sm64ex directory (meaning next to the Makefile).
+
+If during the build process you get messages saying that the ROM has an incorrect hash, there is a possibility that it's a V64 ROM that needs to be byteswapped. To do that, use [this web tool](https://hack64.net/tools/swapper.php).
+
 ### Navigate to the sm64ex root directory.
 
 ### Run `make`. To turn certain features on and off, append any needed [build flags](https://github.com/sm64pc/sm64pc/wiki/Build-options) to your `make` invocation like so:
