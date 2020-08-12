@@ -11,7 +11,7 @@ Enter `pacman -Syuu` in the prompt and hit Enter. Press `Y` when it asks if you 
 Enter this command to install packages necessary to build sm64ex:
 
 ```
-pacman -S make git mingw-w64-i686-gcc mingw-w64-x86_64-gcc mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w64-x86_64-SDL2 python3
+pacman -S unzip make git mingw-w64-i686-gcc mingw-w64-x86_64-gcc mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w64-x86_64-SDL2 python3
 ```
 
 ### Copy baserom(s) for asset extraction
