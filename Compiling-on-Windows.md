@@ -1,13 +1,17 @@
 ### Set up MSYS2.
 
-Follow [this guide](https://github.com/orlp/dev-on-windows/wiki/Installing-GCC--&-MSYS2). You might want to download a newer version of the MSYS2 installer from [here](https://github.com/msys2/msys2-installer/releases) instead of the link used in that guide.
+Download the newest version of the MSYS2 installer from [here](https://github.com/msys2/msys2-installer/releases) and install it.
 
 Run the `MINGW64` prompt if you wish to build a 64-bit version of the executable, or the `MINGW32` prompt otherwise.
 
+Enter `pacman -Syuu` in the prompt and hit Enter. Press `Y` when it asks if you want to update packages. If it asks you to close the prompt, do so, then restart it and run the same command again. This updates the packages to their latest versions.
+
 ### Install dependencies.
 
+Enter this command to install packages necessary to build sm64ex:
+
 ```
-pacman -S mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w64-x86_64-SDL2 python3
+pacman -S make git mingw-w64-i686-gcc mingw-w64-x86_64-gcc mingw-w64-i686-glew mingw-w64-x86_64-glew mingw-w64-i686-SDL2 mingw-w64-x86_64-SDL2 python3
 ```
 
 ### Copy baserom(s) for asset extraction
