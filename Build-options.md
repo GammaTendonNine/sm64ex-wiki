@@ -1,5 +1,7 @@
 Here's a list of currently available build options that turn certain features on or off. Append them to your `make` invocation when building, like so: `make FEATURE=1 OTHER_FEATURE=0`.
 
+If you're unsure whether you need to specify an option or not, just don't do it, its default value will be used automatically.
+
 This list may include any new build options added to the `nightly` branch.
 
 | Build option        | Default | Possible values                     | Description                                                                                                                                                                                                                          |
